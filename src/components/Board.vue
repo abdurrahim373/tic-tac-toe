@@ -5,7 +5,7 @@
     </div>
   </div>
 </template>
-  
+
 <script>
 import Cell from './Cell.vue'
 import { useGameStore } from '../stores/gameStore'
@@ -14,12 +14,12 @@ export default {
   name: 'board-component',
   setup: () => {
     return {
-      gameStore: useGameStore(),
+      gameStore: useGameStore()
     }
   },
   computed: {
     values() {
-      return this.gameStore.getItems();
+      return this.gameStore.getItems()
     }
   },
   components: {
@@ -27,4 +27,3 @@ export default {
   }
 }
 </script>
-  
