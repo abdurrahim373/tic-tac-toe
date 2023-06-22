@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/tic-tac-toe/sw.js', { scope: '/tic-tac-toe/' })})}
